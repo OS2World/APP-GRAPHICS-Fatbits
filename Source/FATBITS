@@ -1,0 +1,19 @@
+# Makefile for the fatbits program
+
+initdll.obj : fatbits initdll.asm
+    masm initdll;
+
+fathook.obj : fatbits fathook.c
+    cl -c -ASw -G2rs -Ox -W3 fathook.c
+
+fatbits.dll : fatbits initdll.obj fathook.obj fathook.def
+    link /align:16 fathook+initdll,fatbits.dll,nul,os2,fathook
+
+fatbits.obj : fatbits.c fatbits
+    cl -c -AS -G2rs -Ox -W3 fatbits.c
+
+fatbits.exe : fatbits.obj fatbits.def fatbits.ico fatbits.rc fatbits
+    link /align:16 /NOE fatbits,fatbit,NUL,os2,fatbits
+    if exist fatbits.exe del fatbits.exe
+    ren fatbit.exe fatbits.exe
+    rc fatbits

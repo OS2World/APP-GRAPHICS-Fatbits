@@ -1,0 +1,39 @@
+--------------------------------------------------------------------
+Fatbits - A pixel magnifier program for OS/2 Presentation Manager
+Version: 1990-Jun-08 
+Author: John Ridges
+License: Released as Public Domain by John Ridges on 2015/11/21
+--------------------------------------------------------------------
+
+By John Ridges
+
+Invocation:  START FATBITS
+
+To install, place FATBITS.EXE in your path, FATBITS.DLL in your libpath.
+
+
+Fatbits is one of those mind bogglingly useful utility programs for people
+writing PM software. (If you're not a PM programmer, it'll probably bore you
+to tears). It magnifies an area of the screen centered around the pointer and
+paints the giant pixels into a small, tastefully decorated window. This can
+be indispensable when you want to see something right down to the last pixel.
+
+This is a re-implementation of a Mac desk accessory that's been around since
+day one. This one is a little better than the Mac version since, due to the
+miracle of multi-tasking, you can leave it open and still continue to use
+other programs while it runs.
+
+For those of you that care, I hereby officially release the program into
+the public domain. Fatbit's been pretty thoroughly tested and I'm willing
+to bet what's left of my professional reputation that it's bug free. Of
+course, legally, I make no guarantees about anything it might do to your
+programs, data, hardware, or sanity. Hey, you get what you pay for.
+
+Comments? Questions? Suggestions? Hate mail? You can contact me at Gilmore
+/108 or Compuserve 72000,2057 (checked weekly).
+
+
+5/21/90 - Added window sizing and menu magnification control.
+
+6/08/90 - Fixed bug that caused Fatbits to misbehave when you switched to it
+using the Task Manager. Sorry about that.

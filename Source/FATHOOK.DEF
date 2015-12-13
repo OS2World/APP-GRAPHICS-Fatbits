@@ -1,0 +1,9 @@
+LIBRARY FATBITS
+
+PROTMODE
+
+EXPORTS
+
+    InstallFatHook      @1
+    ReleaseFatHook      @2
+
